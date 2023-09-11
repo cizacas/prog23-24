@@ -1,0 +1,11 @@
+tipos de datos primitivos
+añadir letra
+utilización del casting
+operadores : aritméticos,unarios,relacionales,logicos y de asignación
+expresión ternario, 
+tipo enumerado
+utilización boolean, constante
+distintas opciones de salida de la informacion System.out
+caracteres de control \n
+distintas opciones de lectura
+
