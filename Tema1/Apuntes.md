@@ -2,6 +2,8 @@
 
 ## INDICE
 
+- [UNIDAD 1.  ELEMENTOS DE UN PROGRAMA INFORMÁTICO](#unidad-1--elementos-de-un-programa-informático)
+  - [INDICE](#indice)
   - [INTRODUCCIÓN](#introducción)
   - [LENGUAJE JAVA Y ENTORNO DE DESARROLLO](#lenguaje-java-y-entorno-de-desarrollo)
     - [Ejecución de programas en Java](#ejecución-de-programas-en-java)
@@ -130,8 +132,8 @@ Una vez que nos ha quedado clara la diferencia entre JRE y JDK, vamos a instalar
 Muestra las últimas versiones
 [Enlace a la página de Oracle](https://www.oracle.com/java/technologies/downloads/)
 
-En nuestro caso vamos a instalar el JDK 18.
-[Enlace a la página de Oracle](https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html)
+En nuestro caso vamos a instalar el JDK 20.
+[Enlace a la página de Oracle](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 
 #### Entorno de desarrollo
 
