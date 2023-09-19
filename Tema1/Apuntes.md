@@ -184,6 +184,7 @@ Los pasos a realizar son:
 3. una vez seleccionado daremos nombre al proyecto,asignaremos un directorio donde estará el código que generemos 
 ![pantalla con datos](img/imagen5.png)
 4. el código generado es:
+   
 ```java
 
 package hoja1.ejercicio1;
