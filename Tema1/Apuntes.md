@@ -27,14 +27,13 @@
       - [Relacionales](#relacionales)
       - [Lógicos](#lógicos)
       - [De asignación](#de-asignación)
-      - [Ternario](#ternario)
-    - [Constantes](#constantes)
     - [Expresiones](#expresiones)
+    - [Constantes](#constantes)
+      - [Ternario](#ternario)
     - [Escritura por pantalla](#escritura-por-pantalla)
       - [Orden printf](#orden-printf)
     - [Lectura por teclado](#lectura-por-teclado)
     - [Tipos enumerados](#tipos-enumerados)
-  - [HOJAS DE EJERCICIOS](#hojas-de-ejercicios)
 
 <div class="page"/>
 
@@ -186,7 +185,10 @@ Los pasos a realizar son:
 ![pantalla con datos](img/imagen5.png)
 4. el código generado es:
 ```java
-public class PrimerPrograma
+
+package hoja1.ejercicio1;
+
+public class Ejercicio1
 {
      public static void main(String[] args)
      {
@@ -204,8 +206,6 @@ La instrucción *System out println* sirve para escribir en pantalla. Como lo qu
 Además, el archivo debería llamarse PrimerPrograma.java. Es recomendable que el nombre del programa (en realidad el nombre de la clase) y el del archivo coincidan.
 
 También es aconsejable que el nombre del programa comience con una letra mayúscula y le sigan letras en minúsculas. Si consta de varias palabras no pueden utilizarse espacios en blanco.
-
-<div class="page"/>
 
 ### Paquetes en Java
 
@@ -233,19 +233,19 @@ Donde tipo es el tipo de datos que almacenará la variable (texto, números ente
 Ejemplos:
 
 ```java
-int días; // días es un número entero, sin decimales
-boolean decisión; //decisión sólo puede ser verdadera o falsa
+int dias; // días es un número entero, sin decimales
+boolean decision; //decisión sólo puede ser verdadera o falsa
 ```
 También se puede hacer que la variable tome un valor inicial al declarar:
 ```java
-int días=365;
+int dias=365;
 ```
 
 <div class="page"/>
 
 Y se puede declarar más de una variable a la vez del mismo tipo en la misma línea si las separamos con comas:
 ```java
-int días=365, ano=23, semanas;
+int dias=365, ano=23, semanas;
 ```
 Al declarar una variable se puede incluso utilizar una expresión:
 ```java
@@ -254,7 +254,7 @@ int c=a+b; //es válido, c vale 31
 ```
 Java es un lenguaje muy estricto al utilizar tipos de datos. Es un lenguaje fuertemente tipado: cada variable debe tener un tipo declarado.
 
-**Asignación:** Una vez que tenemos la variable declarada, hay que darla un valor. Para ello se utiliza el símbolo =.
+**Asignación:** Una vez que tenemos la variable declarada, hay que darla un valor. Para ello se utiliza el símbolo __=__.
 ```java
 int x = 7;
 ```
@@ -442,8 +442,8 @@ Tenemos los siguientes tipos:
 
 **Realiza los siguientes ejercicios:**
 
-1. Pedir al usuario su edad y mostrar la que tendrá el próximo año.
-2. Escribir una aplicación que pide el año actual y el de nacimiento del usuario. Debe calcular su edad, suponiendo que en el año en curso el usuario ya ha cumplido años.
+1. Crea una aplicación poniendo tu edad y mostrar la edad que tendrá el próximo año.
+2. Escribir una aplicación que asigna a una variable el año actual y  otra variable para tu nacimiento . Debe calcular tu edad, suponiendo que en el año en curso  ya has cumplido los años.
 3. El tipo short permite almacenar valores comprendidos entre -32768 y 32767. Escribir un programa que compruebe el rango de valores de un tipo se comporta de forma cíclica, es decir, el valor siguiente al máximo es el valor mínimo.
 4. Crear una aplicación que calcule la media aritmética de dos notas enteras. Hay que tener en cuenta que la media puede contener decimales.
 
@@ -477,8 +477,8 @@ System.out.println(y); // imprime 6
 
 **Realiza los siguientes ejercicios:**
 
-5. Realizar una aplicación que solicite al usuario su edad y le indique si es mayor de edad (mediante un booleano: true o false).
-6. Escribir un programa que pida un número al usuario e indique mediante un literal booleano si el número es par.
+5. Realizar una aplicación que ponga tu edad y muestre por pantalla si es mayor de edad (mediante un booleano: true o false).
+6. Escribir un programa que tenga una variable con un número e indique mediante un literal booleano si el número es par.
 
 <div class="page"/>
 
@@ -490,11 +490,6 @@ System.out.println(y); // imprime 6
 | \|\|(or)  | condicion1\|\|condicion2  | condicion1 o condicion2 verdaderas |
 | !(not)  | !condicion  | condicion falsa |
 
-**Realiza el siguiente ejercicio:**
-
-7. Diseña un algoritmo que nos indique si podemos salir a la calle. Existen aspectos que influirán en esta decisión: si está lloviendo y si hemos terminado nuestras tareas. Solo podremos salir a la calle si no está lloviendo y hemos finalizado nuestras tareas. Existe una opción en la que, indistintamente de lo anterior, podremos salir a la calle: el hecho de que tengamos que ir a la biblioteca. Solicitar al usuario mediante booleano si llueve, si ha finalizado las tareas y si necesita ir a la biblioteca. El algoritmo debe mostrar mediante booleano si es posible que se le otorgue el permiso de salir a la calle.
-
-
 #### De asignación
 
 | Operador | Uso | Descripción |
@@ -505,6 +500,36 @@ System.out.println(y); // imprime 6
 | \*=  | x\*=valor | Equivalente a x=x\*valor |
 | /= | x/=valor  | Equivalente a x=x/valor |
 
+### Expresiones
+
+Un expresión puede contener constantes, variables y operadores para formar una instrucción sintácticamente correcta. Por el hecho de poder emplear varios operadores en la misma expresión nos encontramos con la necesidad de conocer el orden de evaluación de los operadores: 
+- Prioridades de evaluación:
+  - Paréntesis
+  - Operadores unarios
+  - Operadores aritméticos (\*,/,%,+,-)
+  - Operadores relacionales
+  - Operadores lógicos
+  - Operadores de asignación
+
+
+**Realiza el siguiente ejercicio:**
+
+7. Diseña un algoritmo que nos indique si podemos salir a la calle. Existen aspectos que influirán en esta decisión: si está lloviendo y si hemos terminado nuestras tareas. Solo podremos salir a la calle si no está lloviendo y hemos finalizado nuestras tareas. Existe una opción en la que, indistintamente de lo anterior, podremos salir a la calle: el hecho de que tengamos que ir a la biblioteca. Solicitar al usuario mediante booleano si llueve, si ha finalizado las tareas y si necesita ir a la biblioteca. El algoritmo debe mostrar mediante booleano si es posible que se le otorgue el permiso de salir a la calle.
+
+
+### Constantes
+
+Una constante es una variable de sólo lectura. Dicho de otro modo más correcto, es un valor que no puede variar (por lo tanto no es una variable).
+
+La forma de declarar constantes es la misma que la de crear variables, sólo que hay que anteponer la palabra final que es la que indica que estamos declarando una constante y por tanto no podremos variar su valor inicial:
+```java
+final double PI=3.141591;
+PI=4; //Error, no podemos cambiar el valor de PI
+```
+Como medida aconsejable, los nombres de las constantes deberían ir en mayúsculas.
+
+
+  
 **Realiza el siguiente ejercicio:**
 
 8. Un frutero necesita calcular los beneficios anuales que obtiene de la venta de manzanas y peras. Por este motivo, es necesario diseñar una aplicación que solicite las ventas (en kilos) de cada semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo de manzanas está fijado a 2,35€ y el kilo de peras en 1,95€.
@@ -531,27 +556,6 @@ b= a == 7 ?10:20; // a (que vale 1) == 7 es falso, así que b toma el valor 20
 
 9. Escribir un programa que pida un número al usuario y muestre su valor absoluto.
 
-### Constantes
-
-Una constante es una variable de sólo lectura. Dicho de otro modo más correcto, es un valor que no puede variar (por lo tanto no es una variable).
-
-La forma de declarar constantes es la misma que la de crear variables, sólo que hay que anteponer la palabra final que es la que indica que estamos declarando una constante y por tanto no podremos variar su valor inicial:
-```java
-final double PI=3.141591;
-PI=4; //Error, no podemos cambiar el valor de PI
-```
-Como medida aconsejable, los nombres de las constantes deberían ir en mayúsculas.
-
-### Expresiones
-
-Un expresión puede contener constantes, variables y operadores para formar una instrucción sintácticamente correcta. Por el hecho de poder emplear varios operadores en la misma expresión nos encontramos con la necesidad de conocer el orden de evaluación de los operadores: 
-- Prioridades de evaluación:
-  - Paréntesis
-  - Operadores unarios
-  - Operadores aritméticos (\*,/,%,+,-)
-  - Operadores relacionales
-  - Operadores lógicos
-  - Operadores de asignación
 
 ### Escritura por pantalla
 
@@ -677,7 +681,6 @@ Ejemplo: Posteriormente, al elegir un tamaño de café podemos hacerlo de la sig
 tdc = TamanoDeCafe.MEDIANO;
 ```
 
-## HOJAS DE EJERCICIOS
 :computer: Hoja de ejercicios 2
 
 :computer: Hoja de ejercicios 3
