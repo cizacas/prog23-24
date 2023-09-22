@@ -273,6 +273,8 @@ int x; //x ya vale cero
 
 Como ya hemos visto, para declarar una variable hay que indicar de que tipo será la información que esa variable va a guardar. Cuando indicamos el tipo de dato de una variable indicamos que tipo de dato puede guardar, y cuanta memoria se reserva para esa variable. Cuanta mayor sea la memoria interna que utiliza, mayor es el rango de posibles valores.
 
+<div class="page"/>
+
 En Java tenemos 8 tipos de datos primitivos:
 
 - 4 tipos para enteros: byte, short, int, long.
@@ -404,6 +406,8 @@ Aunque el resultado es 100, y ese resultado es válido para un tipo byte; lo que
 ```java
 n3 = (byte) (n1 * n2 / 100);
 ```
+<div class="page"/>
+
 #### Ámbito de las variables
 
 Toda variable tiene un ámbito. Esto es la parte del código en la que una variable se puede utilizar. De hecho las variables tienen un ciclo de vida:
@@ -533,7 +537,7 @@ Como medida aconsejable, los nombres de las constantes deberían ir en mayúscul
   
 **Realiza el siguiente ejercicio:**
 
-8. Un frutero necesita calcular los beneficios anuales que obtiene de la venta de manzanas y peras. Por este motivo, es necesario diseñar una aplicación que solicite las ventas (en kilos) de cada semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo de manzanas está fijado a 2,35€ y el kilo de peras en 1,95€.
+8. Un frutero necesita calcular los beneficios anuales que obtiene de la venta de manzanas y peras. Por este motivo, es necesario diseñar una aplicación que cree las ventas (en kilos) de cada semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo de manzanas está fijado a 2,35€ y el kilo de peras en 1,95€.
 
 #### Ternario
 
@@ -555,7 +559,7 @@ b= a == 7 ?10:20; // a (que vale 1) == 7 es falso, así que b toma el valor 20
 ```
 **Realiza el siguiente ejercicio:**
 
-9. Escribir un programa que pida un número al usuario y muestre su valor absoluto.
+9. Escribir un programa que asigne un número el usuario y muestre su valor absoluto.
 
 
 ### Escritura por pantalla
@@ -601,7 +605,7 @@ Esta clase está pensada para manejar cuadros de diálogo. Uno de estos cuadros 
 ```java
 String texto; //variable para almacenar los datos recogidos por la caja de texto
 int num;
-texto =JOptionPane.showInputDialog(“Escriba un numero”);
+texto =JOptionPane.showInputDialog("Escriba un numero");
 num = Integer.parseInt(texto);
 ```
 Para convertir el dato recogido por teclado al tipo de dato que nosotros deseamos, usaremos una de las siguientes funciones:
@@ -613,7 +617,18 @@ Para convertir el dato recogido por teclado al tipo de dato que nosotros deseamo
 - Double.parseDouble convierte a double
 - Boolean.parseBoolean convierte a boolean
 
-2. Usando la clase System:
+Para convertir el dato a caracter aunque tenemos la clase envoltorio __Character__ no dispone de un método en este caso el método lo tiene la clase String y es charAT(pos), donde pos es la posición dentro de una cadena del caracter que queramos convertir a char
+```java
+ String texto; //variable para almacenar los datos recogidos por la caja de texto
+        char caracter;
+        texto =JOptionPane.showInputDialog("introduce un caracter");
+        caracter=texto.charAt(0); // coger el primer caracter de la cadena y convertirla a caracter
+        System.out.println("El caracter introducido es "+ caracter);
+
+```
+<div class="page"/>
+
+1. Usando la clase System:
 
 Con esta opción, se va a capturar el contenido de System.in, mediante el uso de dos clases que se encuentran dentro del paquete java.io (import java.io.\*). Estas dos clases son:
 - InputStreamReader: Captura los bytes del buffer (System.in) y los convierte a caracteres.
@@ -651,6 +666,7 @@ estudias=teclado.nextBoolean();
 System.out.println("Salario: ");
 salario=teclado.nextFloat();
 ```
+<div class="page"/>
 
 ### Tipos enumerados
 
@@ -663,7 +679,6 @@ Ejemplo:
 ```java
 enum TamanoDeCafe{PEQUEÑO,MEDIANO,GRANDE};
 ```
-<div class="page"/>
 
 Para utilizarla, únicamente hará falta definir una variable del tipo de enumerado definido.
 Llamada: <nomb_enum> <nomb_variable_enum>;
