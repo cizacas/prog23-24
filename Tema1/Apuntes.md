@@ -665,6 +665,7 @@ String nombre;
 int edad;
 boolean estudias;
 float salario;
+char  caracter;
 // Entrada de datos
 System.out.println("Nombre: ");
 nombre=teclado.nextLine();
@@ -674,6 +675,8 @@ System.out.println("Estudias: ");
 estudias=teclado.nextBoolean();
 System.out.println("Salario: ");
 salario=teclado.nextFloat();
+caracter= teclado.next().charAt(0);
+
 ```
 <div class="page"/>
 
