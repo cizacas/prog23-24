@@ -29,7 +29,7 @@
       - [De asignación](#de-asignación)
     - [Expresiones](#expresiones)
     - [Constantes](#constantes)
-      - [Ternario](#ternario)
+    - [Ternario](#ternario)
     - [Escritura por pantalla](#escritura-por-pantalla)
       - [Orden printf](#orden-printf)
     - [Lectura por teclado](#lectura-por-teclado)
@@ -539,7 +539,7 @@ Como medida aconsejable, los nombres de las constantes deberían ir en mayúscul
 
 8. Un frutero necesita calcular los beneficios anuales que obtiene de la venta de manzanas y peras. Por este motivo, es necesario diseñar una aplicación que cree las ventas (en kilos) de cada semestre para cada fruta. La aplicación mostrará el importe total sabiendo que el precio del kilo de manzanas está fijado a 2,35€ y el kilo de peras en 1,95€.
 
-#### Ternario
+### Ternario
 
 Este operador devuelve un valor que se selecciona de dos posibles. La selección dependerá de la evaluación de uan expresión relacional o lógica que, como hemos visto, puede tomar dos valores: verdadero o falso.
 
@@ -633,19 +633,28 @@ Para convertir el dato a caracter aunque tenemos la clase envoltorio __Character
 Con esta opción, se va a capturar el contenido de System.in, mediante el uso de dos clases que se encuentran dentro del paquete java.io (import java.io.\*). Estas dos clases son:
 - InputStreamReader: Captura los bytes del buffer (System.in) y los convierte a caracteres.
 - BufferedReader: Clase que proporciona un método que permite leer hasta el final de la línea.
+- La clase BufferedReader su readLine() arroja __throws IOException__ obliga a controlar los posibles errores.
+
+El método que utilice este método debe tratar la excepción o  continuar arrojándola 
+
 Código ejemplo:
 ```java
+public static void main(String[] args) throws IOException {
+  ...
 InputStreamReader isr = new InputStreamReader(System.in);
 BufferedReader br = new BufferedReader(isr);
 System.out.print("Introduce el texto: ");
 String cad = br.readLine();
+
+}
 ```
 En este caso, también habrá que hacer una conversión del tipo de dato String al tipo de dato que se desee:
 ```java
 int num = Integer.parseInt(cad));
 ```
+<div class="page"/>
 
-3. Usando la clase Scanner: 
+1. Usando la clase Scanner: 
 
 Java a partir de la versión 1.5, incorpora una nueva clase Scanner (import java.util.Scanner), la cual permite leer tipo de datos (int, float, String, etc.), a través de la consola de la aplicación. A continuación, se presenta un ejemplo de su utilización:
 ```java
