@@ -1,7 +1,7 @@
-# CADENAS DE TEXTO EN JAVA.
+# CADENAS DE TEXTO EN JAVA
 
 ## ÍNDICE
-- [CADENAS DE TEXTO EN JAVA.](#cadenas-de-texto-en-java)
+- [CADENAS DE TEXTO EN JAVA](#cadenas-de-texto-en-java)
   - [ÍNDICE](#índice)
   - [INTRODUCCIÓN](#introducción)
     - [Creación](#creación)
