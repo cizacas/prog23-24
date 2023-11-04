@@ -20,4 +20,4 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 
 [Apuntes de la Unidad 3.](Tema3/Apuntes.md)
 
-[aleatorios](Tema3/Aleatorios.md)
+[Generación de números aleatorios](Tema3/Aleatorios.md)
