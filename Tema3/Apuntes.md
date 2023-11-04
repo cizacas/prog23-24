@@ -480,3 +480,5 @@ Veamos otro ejemplo. Dibujamos un cuadrado con asteriscos(*) cuyo número de ast
 :computer: Hoja de ejercicios 5
 
 :computer: Hoja de ejercicios 6
+
+:computer: Hoja de ejercicios 7

@@ -30,4 +30,3 @@ int y= rand.nextInt(M-N+1)+N;
 //y será un número entre M y N ambos incluidos y siendo M mayor que N
 ```
 
-:computer: Hoja de ejercicios 1
