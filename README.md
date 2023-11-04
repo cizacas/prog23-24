@@ -12,5 +12,10 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 
 [Apuntes de la Unidad 2.](Tema2/Apuntes.md)
 
-
 [Cadenas de texto](Tema2/Strings.md)
+
+**3. UNIDAD 3. Estructuras de control.**
+
+[Apuntes de la Unidad 3.](Tema3/Apuntes.md)
+
+[aleatorios](Tema3/Aleatorios.md)
