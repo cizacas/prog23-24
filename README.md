@@ -14,6 +14,8 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 
 [Cadenas de texto](Tema2/Strings.md)
 
+[Conceptos de la programación orientada a objetos](Tema2/conceptosPOO.md)
+
 **3. UNIDAD 3. Estructuras de control.**
 
 [Apuntes de la Unidad 3.](Tema3/Apuntes.md)

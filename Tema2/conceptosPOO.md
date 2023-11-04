@@ -1,6 +1,8 @@
 # CONCEPTOS DE LA PROGRAMACIÓN ORIENTADA A OBJETOS
 
 ## ÍNDICE
+- [CONCEPTOS DE LA PROGRAMACIÓN ORIENTADA A OBJETOS](#conceptos-de-la-programación-orientada-a-objetos)
+  - [ÍNDICE](#índice)
   - [INTRODUCCIÓN](#introducción)
   - [CLASES, OBJETOS E INSTANCIA](#clases-objetos-e-instancia)
   - [LOS CONCEPTOS DE LA POO](#los-conceptos-de-la-poo)
@@ -48,7 +50,7 @@ Por ejemplo, en el caso de las personas que estábamos viendo, toda la informaci
 ### ABSTRACCIÓN
 Como la propia palabra indica, el principio de **abstracción** lo que implica es que la clase debe **representar las características de la entidad hacia el mundo exterior, pero ocultando la complejidad** que llevan aparejada. O sea, nos abstrae de la complejidad que haya dentro dándonos una serie de atributos y comportamientos (propiedades y funciones) que podemos usar sin preocuparnos de qué pasa por dentro cuando lo hagamos.
 
-Así, una clase (y por lo tanto todos los objetos que se crean a partir de ella) debe exponer para su uso solo lo que sea necesario. Cómo se haga "por dentro" es irrelevante para los programas que hagan uso de los objetos de esa clase.
+Así, una clase (y por lo tanto todos los objetos que se crean a partir de ella) debe exponer para su uso solo lo que sea necesario. Cómo se haga "por dentro" es `irrelevante` para los programas que hagan uso de los objetos de esa clase.
 
 En nuestro ejemplo de las personas en un juego, puede ser que tengamos un dato interno que llamamos energía y que nunca es accesible directamente desde fuera. Sin embargo, cada vez que la persona anda (o corre, si tuviésemos un método para ello) gasta energía y el valor de este dato disminuye. Y cuando la persona come, el valor sube en función de lo que haya comido.
 
