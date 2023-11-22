@@ -318,7 +318,7 @@ boolean salir=false; /* En este caso el centinela es una variable booleana que i
 int n;
 while(salir==false) 	// Condición de repetición: que salir siga siendo falso. Ese es el centinela. 
 {	//También se podía haber escrito simplemente: while(!salir)
-        n=(int)Math.floor(Math.random()*499+1); // Lo que se repite en el bucle:
+        n=(int)Math.floor(Math.random()*500)+1); // Lo que se repite en el bucle:
         System.out.println(n); 	// calcular un número aletorio de 1 a 500 y escribirlo
         salir=(n%7==0);   //El centinela vale verdadero si el número es múltiplo de 7 
 }
