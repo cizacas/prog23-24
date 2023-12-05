@@ -21,3 +21,9 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 [Apuntes de la Unidad 3.](Tema3/Apuntes.md)
 
 [Generación de números aleatorios](Tema3/Aleatorios.md)
+
+**4. UNIDAD 4. Estructuras de almacenamiento estáticas ARRAYS.**
+
+[Apuntes de la Unidad 4.](Tema4/Apuntes.md)
+
+[Fechas en Java](Tema4/FechasJava.md)
