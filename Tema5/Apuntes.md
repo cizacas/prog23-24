@@ -42,7 +42,7 @@ Podría no haberse creado ningún objeto de la clase Coche y sin embargo seguir�
 
 ```java
 public class Coche {
-    private static String NOMBRE="Coche";
+    private static final String NOMBRE="Coche";
     private String matricula;
     private String color;
 
@@ -71,7 +71,7 @@ class Punto {
     private int x, y;
     // Atributos de clase: cantidad de puntos creados hasta el momento
     public static int cantidadPuntos;
-    public static final String nombre;
+    public static String nombre;
 }
 ```
 Obviamente, para que esto funcione como estás pensando, también habrá que escribir el código necesario para que cada vez que se cree un objeto de la clase Punto se incremente el valor del atributo cantidadPuntos. 
