@@ -753,8 +753,6 @@ Esto se hace añadiendo la palabra __throws__ tras la primera línea de un méto
 	} 
 ```
 
-Vemos un ejemplo: Excepciones1 (Solo ejemplo3).
-
 En este caso se está indicando que el método usarArchivo puede provocar excepciones del tipo IOException y InterruptedException. Lo cual obliga a que el código que invoque a este método deba preparar el (o los) catch correspondientes. 
 
 <div class="page"/>
