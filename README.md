@@ -31,3 +31,7 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 **5. UNIDAD 5. Uso avanzado de Clases.**
 
 [Apuntes de la Unidad 5.](Tema5/Apuntes.md)
+
+**6. UNIDAD 6. Estructuras de almacenamiento dinámicas COLECCIONES y MAPAS.**
+
+[Apuntes de la Unidad 6.](Tema6/Apuntes.md)
