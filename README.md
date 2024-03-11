@@ -34,4 +34,6 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 
 **6. UNIDAD 6. Estructuras de almacenamiento dinámicas COLECCIONES y MAPAS.**
 
+[Expresiones regulares ](Tema6/ExpresionesRegulares.md)
+
 [Apuntes de la Unidad 6.](Tema6/Apuntes.md)
