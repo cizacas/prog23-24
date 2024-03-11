@@ -140,7 +140,7 @@ public interface Comparable<T>{
     int compareTo(T o);
 }
 public interface Comparator<T>{
-    in compare( T o1, T o2);
+    int compare( T o1, T o2);
 }
 
 ```
@@ -173,7 +173,7 @@ Normalmente implementados dentro de clases o interfaces genéricas. Sin embargo,
 Ejemplo, vamos a implementar un método que nos devuelve el número de elementos null que hay en un vector que se le pasa como argumento.
 El tipo U del vector es genérico, y se declara en la definición del método, justo antes del tipo de dato devuelto
 ```java
-public static <U> int numeroDeNulos( U[] vector){
+public static int numeroDeNulos( U[] vector){
     int cont=0;
     for (U elemento: vector){
         if (elemento==null){
