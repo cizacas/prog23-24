@@ -9,6 +9,7 @@
   - [FICHEROS DE TEXTO](#ficheros-de-texto)
     - [Gestión de ficheros de texto (Línea a línea)](#gestión-de-ficheros-de-texto-línea-a-línea)
   - [FICHEROS DE OBJETOS. SERIALIZACIÓN](#ficheros-de-objetos-serialización)
+    - [Generar SerialVersionUID](#generar-serialversionuid)
 
 
 ## INTRODUCCIÓN
@@ -447,10 +448,10 @@ En la lectura se puede aplicar el cierre automático del Try
 public static void leerFichero(File fichero) {
   boolean fin = false;
   try (ObjectInputStream os = new ObjectInputStream(new FileInputStream(fichero));) {
-      Coche c;
+      Coche coche;
       while (!fin) {
-          c = (Coche) os.readObject();//Casting necesario 
-          System.out.println(c.toString());
+          coche = (Coche) os.readObject();//Casting necesario 
+          System.out.println(coche.toString());
       }
   } catch (EOFException e) {
       //termina la lectura del fichero
@@ -484,6 +485,15 @@ Para la opción 2, en caso que el fichero ya exista, crearemos un objeto ObjectO
 Vemos el ejercicio completo en el siguiente ejemplo.
 
 **Ejemplo:** EjemploSerializable
+
+### Generar SerialVersionUID
+
+Es importante declarar el atributo **serialVersionUID** dentro de cualquier clase que implemente **Serializable**
+1. **serialVersionUID**. Se utiliza para indicar la versión de los datos serializados.
+2. Cuando no declaramos **serialVersionUID** en nuestra clase, el tiempo de ejecución de Java lo hace por nosotros, pero este proceso es sensible a muchos metadatos de la clase, incluido el número de campos, el tipo de campos, los modificadores de acceso a los campos, las interfaces que se implementan en la clase. , etc. Puedes encontrar la información exacta en la documentación de serialización de Oracle.
+3. Se recomienda declarar **serialVersionUID** como una variable larga final estática privada para evitar el mecanismo predeterminado.
+
+> cuando hemos creado un fichero serializable  y lo queremos leer en otra ejecución del programa es obligatorio definir el atributo en la clase. Por ejemplo,  private static final long serialVersionUID=5056103125083778370L
 
 :computer: Hoja de ejercicios 3
 
