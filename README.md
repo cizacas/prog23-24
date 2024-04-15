@@ -37,3 +37,7 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 [Expresiones regulares ](Tema6/ExpresionesRegulares.md)
 
 [Apuntes de la Unidad 6.](Tema6/Apuntes.md)
+
+**7. UNIDAD 8. Gestión de bases de datos relacionales.**
+
+[Apuntes de la Unidad 8.](Tema8/Apuntes.md)
