@@ -8,6 +8,7 @@
   - [FLUJOS DE DATOS](#flujos-de-datos)
   - [FICHEROS DE TEXTO](#ficheros-de-texto)
     - [Gestión de ficheros de texto (Línea a línea)](#gestión-de-ficheros-de-texto-línea-a-línea)
+    - [Clase StringTokenizer](#clase-stringtokenizer)
   - [FICHEROS DE OBJETOS. SERIALIZACIÓN](#ficheros-de-objetos-serialización)
     - [Generar SerialVersionUID](#generar-serialversionuid)
 
@@ -341,6 +342,43 @@ File fichero = new File("mifichero.txt");
 **Ejemplo:** PrintWriter
 
 :computer: Hoja de ejercicios 2
+
+### Clase StringTokenizer 
+La clase **StringTokenizer** en Java proporciona un método String tokenizador para dividir una cadena en tokens según un delimitador específico. 
+La cadena del tokenizador puede ser cualquier cadena que separe los tokens, como una 
+coma, un punto y coma o un espacio en blanco. 
+Usando el método tokenizer String de la clase StringTokenizer , podemos dividir una cadena en sus partes constituyentes. 
+* Al llamar al **método nextToken()** , podemos recuperar cada token por turno
+* Al usar el **método hasMoreTokens()** , podemos verificar si quedan más tokens. 
+* El **método length()** de la clase StringTokenizer se puede utilizar para obtener la longitud de cada token. 
+
+StringTokenizer String es una herramienta útil para la manipulación de cadenas y se puede utilizar para analizar archivos CSV, URL u otros datos basados ​​en texto. 
+
+La clase StringTokenizer es parte del paquete Java.util y proporciona una forma sencilla de dividir una cadena en tokens. 
+La clase tiene dos constructores, uno que toma una cadena para tokenizar y un carácter o cadena delimitador, y otro que toma los mismos argumentos así como un indicador booleano que indica si se incluye o no el delimitador como token. 
+
+Una vez que haya creado un objeto StringTokenizer , puede utilizar sus diversos métodos para recorrer los tokens y realizar diversas operaciones con ellos. 
+
+Ejemplo: Leer una cadena que caracteres y obtener todas las palabras que la componen
+
+```java
+  String input = "Hola Mundo! Cómo te encuentras hoy?";
+  StringTokenizer tokenizer = new StringTokenizer(input, " ");
+  while (tokenizer.hasMoreTokens()) {
+      String token = tokenizer.nextToken();
+      System.out.println("Palabra: " + token + " Longitud: " + token.length());
+  }
+```
+La salida de la información es 
+```
+Palabra: Hola Longitud: 4
+Palabra: Mundo! Longitud: 6
+Palabra: Cómo Longitud: 4
+Palabra: te Longitud: 2
+Palabra: encuentras Longitud: 10
+Palabra: hoy? Longitud: 4
+```
+
 
 ## FICHEROS DE OBJETOS. SERIALIZACIÓN
 
