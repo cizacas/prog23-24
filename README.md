@@ -41,3 +41,11 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 **7. UNIDAD 8. Gestión de bases de datos relacionales.**
 
 [Apuntes de la Unidad 8.](Tema8/Apuntes.md)
+
+**8. UNIDAD 7. Ficheros.**
+
+[Apuntes de la Unidad 7.](Tema7/Apuntes.md)
+
+**9. UNIDAD 9. Swing GUI Forms .**
+
+[Apuntes de la Unidad 9.](Tema9/Swing.md)
