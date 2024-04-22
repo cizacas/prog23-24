@@ -25,6 +25,7 @@
     - [Clase javax.swing.JPasswordField](#clase-javaxswingjpasswordfield)
     - [Clase javax.swing.JTextArea](#clase-javaxswingjtextarea)
     - [Clase javax.swing.JComboBox](#clase-javaxswingjcombobox)
+    - [Clase javax.swing.ButtonGroup y javax.swing.JRadioButton](#clase-javaxswingbuttongroup-y-javaxswingjradiobutton)
   - [Trabajar con imágenes](#trabajar-con-imágenes)
 
 ## Que es Swing
@@ -415,6 +416,31 @@ Combinación de entrada de Texto con Lista de selección desplegable. Posee barr
     * void removeAll() 		
     * void setEditable(boolean b)
   
+### Clase javax.swing.ButtonGroup y javax.swing.JRadioButton
+Permite elegir una sola opción de un conjunto predeterminado de estas.
+
+* Definir un Radio Button y creación del grupo de botones
+```java
+import javax.swing.ButtonGroup;
+import javax.swing.JRadioButton;
+//Definir un RadioButton:
+JRadioButton rbtn1=new JRadioButton("txt1",true);
+JRadioButton rbtn2=new JRadioButton("txt2",false);
+JRadioButton rbtn3=new JRadioButton("txt3",false);
+ //Creación del Grupo de Botones:
+ButtonGroup grupo1 = new ButtonGroup();
+grupo1.add(rbtn1);
+grupo1.add(rbtn2);
+grupo1.add(rbtn3);
+```
+La Clase que se utiliza se llama **JRadioButton** y donde la clase que nos permite crear un grupo donde "almacenaremos" nuestro botones es la **ButtonGroup**. Los parámetros que se pasan al momento de crearlo son el Texto que llevará y si estará seleccionado este ítem al momento de ejecutar nuestro programa. 
+
+Existen otras formas tanto de colocar el texto en un RadioButton como de configurar si este estará seleccionado por defecto, tales como:
+```java
+rbtn1.setText("Texto");
+rbtn1.setSelected(true);
+```
+
 <div class="page"/>
 
 ## Trabajar con imágenes
