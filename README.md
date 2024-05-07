@@ -42,6 +42,8 @@ Apuntes de programación del CFGS de Desarrollo de Aplicaciones Web.
 
 [Apuntes de la Unidad 8.](Tema8/Apuntes.md)
 
+[Relaciones Entidades/Diagramas de clase](Tema8/Relaciones.md)
+
 **8. UNIDAD 7. Ficheros.**
 
 [Apuntes de la Unidad 7.](Tema7/Apuntes.md)
