@@ -26,14 +26,8 @@ Clase Familia:
 ```
 Y aquí está cómo se vería en un diagrama de clases UML:
 
-```plaintext
+![](img/1.jpg)
 
-  Producto <---------- Familia
-  - idProducto         - idFamilia
-  - nombre             - nombre
-  - familia
-
-```
 La flecha desde Producto a Familia indica que Producto tiene una referencia a Familia, lo que significa que un Producto pertenece a una Familia.
 
 > Ejemplo: Tenemos que reflejar una relación un Cliente realiza de cero a n Pedidos
@@ -58,12 +52,7 @@ Clase Pedido:
 
 Y aquí está cómo se vería en un diagrama de clases UML:
 
-```plaintext
-  Cliente 1 ----------* Pedido
-  - idCliente          - idPedido
-  - nombre             - fecha
-  - pedidos            - cliente
-```
+![](img/2.jpg)
 
 En este diagrama, la línea entre `Cliente` y `Pedido` representa la relación entre las dos clases. El "1" cerca de `Cliente` indica que cada `Pedido` está asociado a exactamente un `Cliente`. El "*" cerca de `Pedido` indica que un `Cliente` puede tener cero a muchos `Pedidos`.
 
@@ -97,13 +86,8 @@ Clase Compra:
 ```
 Y aquí está cómo se vería en un diagrama de clases UML:
 
-```plaintext
-Cliente 1 ----------* Compra *---------- 1 Producto
-  - idCliente          - idCompra           - idProducto
-  - nombre             - fecha              - nombre
-  - compras            - cliente            - compras
-                        - producto
-```
+![](img/3.jpg)
+
 Una relación de muchos a muchos podría ser, por ejemplo, entre `Clientes` y `Productos` en el contexto de una tienda. Un `Cliente` puede comprar muchos `Productos` y un `Producto` puede ser comprado por muchos `Clientes`. 
 
 
