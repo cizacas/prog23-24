@@ -1,4 +1,4 @@
-remote_theme: pages-themes/leap-day@v0.2.0
+remote_theme: pages-themes/modernist@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
@@ -6,11 +6,10 @@ plugins:
 relative_links:
   enabled: true
 
-theme: jekyll-theme-leap-day
 github:
   is_project_page: false
 
 title: Programación
 description: Apuntes de programación del CFGS de Desarrollo de Aplicaciones Multiplataforma.
 
-show_downloads: false
+show_downloads: true
