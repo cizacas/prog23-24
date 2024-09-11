@@ -1,5 +1,12 @@
+---
+marp: true
+theme: default
+class: 
+  - lead
+  - invert
+---
 # UNIDAD 1.  ELEMENTOS DE UN PROGRAMA INFORMÁTICO
-
+---
 ## INDICE
 
 - [UNIDAD 1.  ELEMENTOS DE UN PROGRAMA INFORMÁTICO](#unidad-1--elementos-de-un-programa-informático)
@@ -35,6 +42,7 @@
     - [Lectura por teclado](#lectura-por-teclado)
     - [Tipos enumerados](#tipos-enumerados)
 
+---
 <div class="page"/>
 
 ## INTRODUCCIÓN
@@ -86,6 +94,7 @@ Resumido en un esquema sería así:
         - Imprimir el resultado por pantalla
 
 <div class="page"/>
+---
 
 ## LENGUAJE JAVA Y ENTORNO DE DESARROLLO
 
@@ -144,6 +153,7 @@ Tenemos varios entornos disponibles, algunos de código abierto y gratuitos. Un 
 [Enlace a la página de Netbeans](https://netbeans.apache.org/download/)
 
 <div class="page"/>
+---
 
 ## TAREA PARA REALIZAR EN CASA
 Debéis instalar el JDK que estamos utilizando en clase, y el Netbeans en el equipo de casa. Tendréis que hacer capturas de pantalla donde se vea la fecha y hora para comprobar que la instalación está hecha, del estilo a estos dos recortes:
@@ -153,6 +163,7 @@ Debéis instalar el JDK que estamos utilizando en clase, y el Netbeans en el equ
 ![Descripción de la imagen](img/imagen3.png)
 
 <div class="page"/>
+---
 
 ## PROGRAMACIÓN EN JAVA
 
@@ -219,6 +230,7 @@ Algunos paquetes sirven para utilizar funciones matemáticas, funciones de lectu
 Por ejemplo la clase *System* está dentro del paquete *java.lang* (paquete básico) y posee el método *out.println* que necesitamos para escribir fácilmente por pantalla.
 
 La sintaxis de esta instrucción es *import paquete.subpaquete.subsubapquete.clase*. Esta instrucción se coloca arriba del todo en el código.
+---
 
 ### Variables en Java
 
@@ -342,6 +354,7 @@ double y = x; //correcto
 Al declarar números (sean del tipo que sean), si no se indican valores iniciales, Java asigna el valor cero.
 
 <div class="page"/>
+---
 
 #### Tipos de datos: booleanos
 
@@ -422,6 +435,7 @@ Una vez que la variable ha sido eliminada, no se puede utilizar. Dicho de otro m
 }
 int y=x; //error, ya no existe x
 ```
+---
 
 ### Operadores
 
@@ -486,6 +500,7 @@ System.out.println(y); // imprime 6
 6. Escribir un programa que tenga una variable con un número e indique mediante un literal booleano si el número es par.
 
 <div class="page"/>
+---
 
 #### Lógicos
 
@@ -557,6 +572,8 @@ int a,b;
 a=3<5 ? 1 : -1; //3<5 es cierto: así que a toma el valor 1.
 b= a == 7 ?10:20; // a (que vale 1) == 7 es falso, así que b toma el valor 20
 ```
+---
+
 **Realiza el siguiente ejercicio:**
 
 9. Escribir un programa que asigne un número el usuario y muestre su valor absoluto.

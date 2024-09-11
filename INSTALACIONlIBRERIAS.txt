@@ -1,0 +1,25 @@
+cuando nos da fallo la instalación de librerias de maven  con netbeans
+
+ir a la dirección 
+C:\Program Files\NetBeans-21\netbeans\java\maven\bin
+
+y ejecutar
+
+mvn install:install-file -Dfile="C:\Users\Docente\Documents\ProyectosDAM1\DAM1_Equipo2\App\Equipo2\library\swing-blur-background-1.1.0.jar" -DgroupId=raven.swing -DartifactId=swing-blur-background -Dversion=1.1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile="C:\Users\Docente\Documents\ProyectosDAM1\DAM1_Equipo2\App\Equipo2\library\swing-glasspane-popup-1.5.0.jar" -DgroupId=raven.popup -DartifactId=swing-glasspane-popup -Dversion=1.5.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile="C:\Users\Docente\Documents\ProyectosDAM1\DAM1_Equipo2\App\Equipo2\library\swing-chart-1.1.0.jar" -DgroupId=raven.chart -DartifactId=swing-chart -Dversion=1.1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile="C:\Users\Docente\Documents\ProyectosDAM1\DAM1_Equipo2\App\Equipo2\library\swing-datetime-picker-1.1.1.jar" -DgroupId=raven.datetime -DartifactId=swing-datetime-picker -Dversion=1.1.1 -Dpackaging=jar
+
+
+las librerias tiene que estar descargadas en el proyecto
+
+y en el pom debe figurar solamente
+
+        <dependency>
+            <groupId>raven.swing</groupId>
+            <artifactId>swing-blur-background</artifactId>
+            <version>1.1.0</version>
+        </dependency>
